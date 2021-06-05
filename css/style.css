@@ -198,7 +198,7 @@ h2 {
   bottom: 0;
 }
 
-#main img {
+.top-slide img {
   height: 550px;
   object-fit: cover;
 }
@@ -207,6 +207,44 @@ h2 {
   background-color: white;
   z-index: 99;
 }
+
+.top-work {
+  z-index: 99;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  bottom: 75px;
+  left: 50%;
+  transform: translateY(0%) translateX(-50%);
+}
+.work-arrow {
+  z-index: 99;
+  position: absolute;
+  bottom: 20px;
+  animation: scroll ease-in-out 1s infinite alternate;
+  /* left: 48%;
+  transform: translateY(0%) translateX(-48%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.work-arrow > img {
+  width: 40px;
+  height: 40px;
+}
+
 #main h1 {
   font-size: 80px;
   /* 自動で改行するのを防ぐ */
@@ -217,7 +255,43 @@ h2 {
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   z-index: 99;
+
+  font-family: "Raleway";
 }
+
+/* dropアニメーション */
+.letterDrop {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  /* text-transform: uppercase;  */
+  /* letter-spacing: 0.5em; */
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  animation: letterDrop 1.2s ease 1 normal forwards;
+}
+
+@keyframes letterDrop {
+  10% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.8;
+    top: 3.75em;
+    transform: rotateX(-360deg);
+  }
+  100% {
+    opacity: 1;
+    /* top: 2.50em; */
+    transform: rotateX(360deg);
+  }
+}
+
+h1 span:nth-child(3n) {
+  color: rgb(151, 88, 252);
+}
+/* dropアニメーション */
+
 #main h2 {
   font-size: 25px;
   /* 自動で改行するのを防ぐ */
@@ -229,6 +303,7 @@ h2 {
   transform: translateY(-50%) translateX(-50%);
   /* -webkit-transform: translateY(-50%) translateX(-50%); */
   z-index: 99;
+  font-family: "Raleway";
 }
 
 /*  */
@@ -625,7 +700,7 @@ h2 {
 /* Worksエリア */
 /*  */
 #work {
-  padding: 30px 60px 38px;
+  padding: 30px 60px 100px;
 }
 #work h3 {
   margin-bottom: 25px;
@@ -724,6 +799,41 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
+/* NEW アニメーション */
+.work-image1 {
+  position: relative;
+}
+.sale-badge2 {
+  background: #ea551c;
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  flex-flow: column wrap;
+  vertical-align: top;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  animation: r2 5s linear infinite;
+  position: absolute;
+  top: -20px;
+  left: -15px;
+  z-index: 100;
+}
+@keyframes r2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #work .td2 {
   text-align: left;
 }
@@ -994,7 +1104,12 @@ table {
   float: right;
 }
 
+/*  */
+/*  */
+/*  */
 /* #レスポンシブ対応 */
+/*  */
+/*  */
 @media (min-width: 768px) {
   .pc_none {
     display: none !important;
@@ -1152,7 +1267,7 @@ header_navリストが表示されるようにするためのもの？ */
     height: 600px;
   }
 
-  #main img {
+  #top-slide img {
     height: 600px;
   }
 
@@ -1359,7 +1474,7 @@ header_navリストが表示されるようにするためのもの？ */
     display: block;
   }
   .work-content {
-    left:-15px;
+    left: -15px;
     width: 100%;
     margin-bottom: 15px;
   }
@@ -1375,7 +1490,7 @@ header_navリストが表示されるようにするためのもの？ */
   #work .gokuraku {
     margin-top: 0;
     font-size: 14px;
-    width:275px;
+    width: 275px;
   }
 
   .work-content p {
