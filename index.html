@@ -9,7 +9,7 @@
     <meta name="description" content="迅速かつ丁寧な対応でWeb制作を承っているKen Shimizuのポートフォリオサイトです。これまでの実績やサービス内容をまとめています。">
     <meta name="keywords" content="KEN, Web制作, Webエンジニア, ポートフォリオ, エンジニア, フリーランス">
     <!-- WEBフォントを使用するために以下用意 -->
-    
+    <link rel="icon" href="image/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/mzd4mgq.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -50,12 +50,12 @@
           <span></span>
         </div>
       </div>
-
+      
       <div id="nav-content">
         <nav class="header_nav">
           <ul class="nav_list">
             <li class="pc_none"><a href="#main" class="nav_btn">Top</a></li>
-            <li><a href="#about" class="nav_btn">PROFILE</a></li>
+            <li><a href="#about" class="nav_btn">ABOUT</a></li>
             <li><a href="#service" class="nav_btn">SERVICE</a></li>
             <li><a href="#work" class="nav_btn">WORKS</a></li>            
             <li><a href="#contact" class="nav_btn">CONTACT</a></li>            
@@ -64,46 +64,44 @@
         </nav>
       </div>
     </header>
-
+    
     <div id="container">
       
       <section id="main">
-        <div id="top-slide">
-          <!-- 2枚の画像を最後の方のjava設定でスライドさせる-->
-          <img src="image/top1.jpg" alt="topslide_1">
-
-        </div>
-        <div class="main-title">
-          <h1>Ken Shimizu's Portfolio</h1>
-          <h2 class="ken">Web engineer / RPA (Robotics Process Automation)</h2>
-        </div>
-        <a class="top-work" href="#work">Works</a>
-        <a class="work-arrow" href="#work"><img src="image/arrow.png" alt=""></a>
+        <div class="main-whole">
+          <a class="logo" href="#"><img src="image/portfolio-logo.png" alt=""></a>
+          <div class="main-title">
+            <h1>Webで繋げる、<br>ひとと繋がる。</h1>
+            <h2 class="ken">想いを"形"にし、ひとを"繋げる"サポートをします。</h2>
+          </div>
+          <img class="top-image" src="image/portfolio-top2.jpg" alt="topslide_1">
+          <a class="top-work" href="#work">Works</a>
+          <a class="work-arrow" href="#work"><img src="image/arrow.png" alt=""></a>
+       </div>
       </section>
 
-      <section id="about" class="be-gray">
-        <div class="part-background"></div>
+      <section id="white">&nbsp;<br></section>
+
+      <section id="about" class="parallax-bg img-bg-01">
+        <!-- <div class="part-background"></div> -->
         <h2 class="keyframe animation ">ABOUT</h2>
         <h3>ー 私について</h3>
         <div class="about-flex wow animate__animated animate__fadeIn" data-wow-delay=".3s">
-          <div class="about-text-area stroke anim">
+          <div class="about-text-area stroke anim ">
             <div class="border top"></div>
             <div class="border right"></div>
             <div class="border bottom"></div>
             <div class="border left"></div>
-            <h2 class="mainname">Ken Shimizu</h2>
-            <p>初めまして。Ken と申します。
-
-              現在企業に勤務しつつ、Web制作および業務改善（RPA検討、導入）を行っております。
-              Web制作、RPA の仕事は、<br>
+            <p>Web制作および業務改善（RPA導入）を行っております。
+              頂いたお仕事は、<br>
               「<span class="line">クオリティ</span>、<span class="line">スピード</span>、<span class="line">丁寧なコミュニケーション</span>を常に心がけて期待以上のものを提供させて頂きます。また、クライアント様の事業を制作から集客まで一気通貫で伴走して、<span class="line">最後まで責任を持って</span>、仕事に取り組ませていただきます。」
               </p>
             <ul>
               <li>1992年：神奈川県藤沢市出身</li>
-              <li>2015年：東京理科大学工学部第一部経営工学科卒業</li>
               <li>2017年：東京理科大学大学院経営工学専攻卒業（国内学会2本/国際学会1本）</li>
               <li>2019年：株式会社RICOH 社内賞受賞（RPA） アジア大会招待</li>
             </ul>
+            <p class="CEO">WEBond 代表 &nbsp;&nbsp; 清水&nbsp;健</p>
           </div>
 
           <div class="about-img-area">
@@ -151,42 +149,67 @@
       </section>
       
 
-      <section id="service" class="wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+      <section id="service" class="wow animate__animated animate__fadeInUp parallax-bg img-bg-02" data-wow-delay=".3s">
         <div class="service">
           <h2 class="keyframe animation">SERVICE</h2>
           <h3>ー サービス内容 / 費用</h3>
           <div class="service-list">
             <div class="service-content">
-              <img src="image/service001.svg" alt="website">
-              <h3 class="service-title">コーディング</h3>
+              <div class="service-area">
+                <img src="image/service001.svg" alt="website">
+                <h3 class="service-title">コーディング</h3>
+              </div>
               <div class="service-text-area">
-                <p>LP やコーポレートサイト等、ご要望・目的に応じた適切なコーディングを実施します。（レスポンシブ対応も可能です）また、コード修正についても対応しています。</p>
                 <div class="service-fee">【料金目安】
-                  <br>コード修正: ¥10,000~/1p
-                  <br>LP制作: ¥20,000~/1p
+                  <br>コード修正: ¥8,000~/1p
+                  <br>LP制作: ¥15,000~/1p
                 </div>
+                <p>
+                スマホ画面最適化<br>
+                画像選定<br>
+                お問い合わせフォーム<br>
+                Googleマップ埋め込み<br>
+                セキュリティ対策<br>
+                SEO対策 <br>
+                その他<br><br>LP やコーポレートサイト等、ご要望・目的に応じた適切なコーディングを実施します。（レスポンシブ対応も可能です）また、コード修正についても対応しています。</p>
               </div>
             </div>
             <div class="service-content">
-              <img src="image/service002.svg" alt="wordpress">
-              <h3 class="service-title">WORDPRESS</h3>
+              <div class="service-area">
+                <img src="image/service002.svg" alt="wordpress">
+                <h3 class="service-title">WORDPRESS</h3>
+              </div>
               <div class="service-text-area">
-                <p>コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。</p>
                 <div class="service-fee">【料金目安】
-                  <br>Wordpress移行: ¥80,000~
-                  <br>Wordpress制作: ¥180,000~
+                  <br>Wordpress移行: ¥50,000~
+                  <br>Wordpress制作: ¥120,000~
                 </div>
+                <p>スマホ画面最適化<br>
+                  画像選定<br>
+                  お問い合わせフォーム<br>
+                  Googleマップ埋め込み<br>
+                  セキュリティ対策<br>
+                  SEO対策 <br>
+                  ブログ機能 等<br><br>コーポレートサイトや個人ブログ、およびウェブマガジンなどのWordPressサイトの構築や既存サイトのWordPress移行、コードの修正に対応しております。</p>
               </div>
             </div>
             <div class="service-content">
-              <img class="RPA3" src="image/RPA3.jpg" alt="writing">
-              <h3 class="service-title">RPA(業務改善/自動化)</h3>
+              <div class="service-area">
+                <img class="RPA3" src="image/RPA3.jpg" alt="writing">
+                <h3 class="service-title">RPA(業務改善/自動化)</h3>
+              </div>
               <div class="service-text-area">
-                <p>既存の業務プロセスの改善提案、および自動化ツール開発（RPA）により、お客様の業務工数低減・業務効率向上の支援をさせて頂きます。<br>※RPA：PCロボットが既存業務を実行</p>
                 <div class="service-fee">【料金目安】
-                  <br>ＲＰＡ開発（仕様書作成含む）: ¥80,000~
+                  <br>ＲＰＡ開発（仕様書作成含む）: ¥80,000~<br>
                   <br>
                 </div>
+                <p>ポテンシャルヒアリング<br>
+                  仕様洗い出し<br>
+                  業務設計コンサル<br>
+                  仕様書作成<br>
+                  RPA開発<br>
+                  設計書作成 <br>
+                  その他<br><br>既存の業務プロセスの改善提案、および自動化ツール開発（RPA）により、お客様の業務工数低減・業務効率向上の支援をさせて頂きます。<br>※RPA：PCロボットが既存業務を実行</p>
               </div>
             </div>
             <div class="service-text"><span class="line">納品後のサイト修正 30 日間無料＆アフタフォローをしております</span>。ご不明な点等ございましたら遠慮なくお問い合わせください。<br>※上記料金は目安となります。契約成立時には別途正式なお見積りを作成致します。</div>
@@ -195,6 +218,50 @@
       </section>
         
       <section id="work" class="be-gray wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+        <h2 class="keyframe animation">WORKS</h2>
+        <h3>ー 制作実績</h3>
+        <div class="article-model-cont">
+          <ul class="article-model-list">
+            <li class="model-item1">
+                <img class="house" src="image/ace-base.png" alt="">
+                <div class="model-textarea1">
+                  <img class="model-icon" src="" alt="">
+                  <div class="sale-badge2">NEW</div>
+                  <h2 class="model-title">ACE BASE (建築事務所)</h2>
+                  <p class="model-text">制作期間：約2週間<br>ブログ機能等実装。<br>
+                    <span class="price">Create HP, Wed Design<br>(HTML/CSS/JQuery/WORDPRESS)</span>
+                  </p>
+                  <div class="model-more"><a href="https://ace-base.net" target="_blank">詳細を確認する&nbsp;＞</a></div>
+                </div>
+            </li>
+            <li class="model-item2">
+                <img class="house" src="image/bloom.png" alt="">
+                <div class="model-textarea2">
+                  <img class="model-icon" src="" alt="">
+                  <h2 class="model-title">BAR BLOOM</h2>
+                  <p class="model-text">制作期間：約3週間<br>ブログ機能等実装。<br>
+                    <span class="price">Create HP, Wed Design<br>(HTML/CSS/JQuery/WORDPRESS)</span>
+                  </p>
+                  <div class="model-more"><a href="https://bar-bloom.net" target="_blank">詳細を確認する&nbsp;＞</a></div>
+                </div>
+            </li>
+            <li class="model-item1">
+                <img class="house" src="image/onsen.png" alt="">
+                <div class="model-textarea1">
+                  <img class="model-icon" src="" alt="">
+                  <h2 class="model-title">極楽亭 (架空の温泉サイト)</h2>
+                  <p class="model-text">制作期間：1週間<br>ブログ機能等実装。<br>
+                    <span class="price">Create HP, Wed Design<br>(HTML/CSS/JQuery/WORDPRESS)</span>
+                  </p>
+                  <div class="model-more"><a href="http://keeen14onsen.net" target="_blank">詳細を確認する&nbsp;＞</a></div>
+                </div>
+            </li>  
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- <section id="work" class="be-gray wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
         <h2 class="keyframe animation">WORKS</h2>
         <h3>ー 制作実績</h3>
         <div class="work-list">
@@ -274,7 +341,7 @@
           </div>
          
         </div>
-      </section>
+      </section> -->
 
 
       <section id="flow" class="wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
